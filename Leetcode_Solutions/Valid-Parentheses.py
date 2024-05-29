@@ -1,7 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        closeToopen = { ")" : "(", "]" : "]", "}" : "{"}
+        closeToopen = { ")" : "(", "]" : "[", "}" : "{"}
 
         for char in s:
             if char in closeToopen:
